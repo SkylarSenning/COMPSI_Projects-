@@ -5,11 +5,28 @@
 		<title>Mystery_Island</title>
 		<script type="text/JavaScript">
 			var island_name = "Mystery Island"
+			var score= 0;
+			var North= new Boolean(true);			
+			var East= new Boolean(true);
+			var South= new Boolean(true);
+			var West= new Boolean(true);
+			
 			function north_button_heart_of_island() {
 				alert("You are traveling into the heart of the island! Dense jungles, and dangerous terrian lays ahead.");
 				var message= "After entering you have to return because you lost your shoes and the terrian is too tough"
 				alert(message);
+		
+			if (North == true) {
+				score= score + 5;
+				alert(score);
+				North = false;
+				
 			}
+			else if (North == false){
+				score= score + 0;
+				alert(score);			
+			}
+			}		
 			function east_button_down_beach() {
 				alert("You are heading down the beach towards a cluster of palm trees");
 				var message= "As you get closer you see the palm tree is full of coconuts"
@@ -20,13 +37,10 @@
 				var message= "Not even the pure white sand and aqua blue can keep sadness from overwhelming because you know that you are alone"
 				alert(message);
 			}
-			function west_button_beach() {
+						function west_button_beach() {
 				alert("After walking down the west side of the island you come across a"); 
 			}
-			if () {
-			}
-			else {
-			}
+			
 			
 				
 		</script>
